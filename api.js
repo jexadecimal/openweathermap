@@ -10,7 +10,7 @@ formulario.addEventListener("submit", (e)=>{
 
 	const city = formulario.children[0].value;
 	const ajax = new XMLHttpRequest (),
-		url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=6a6e5e04af5ebe5eaa73237f8cbc79d2`;		
+		url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=`;		
 ajax.open('GET',url);
 ajax.send();
 //hasta acá
