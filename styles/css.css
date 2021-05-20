@@ -1,0 +1,120 @@
+/*https://coolors.co/012a4a-013a63-01497c-014f86-2a6f97-2c7da0-468faf-61a5c2-89c2d9-a9d6e5 */
+*{
+	box-sizing:border-box;
+}
+nav.navbar {
+    background-color: #014f86;
+}
+h2{
+	color:#fff;
+	text-align: center;
+
+}
+.background-weather{
+	background: url('../images/cat-flower.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	max-width: 1920px;
+	width: 100%;
+	/*width: clamp(100%,100%,1920px);*/
+	position: relative;
+	padding: 30px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+display:flex;
+width:300px;
+justify-content: space-between;
+
+}
+
+input.form-control {
+    max-width: 215px;
+}
+.form-styles{
+	position: relative;
+	width: 300px;
+	/*top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);*/
+}
+
+.background-weather::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+	width:100%;
+	height:100%;
+	background:RGB(0,0,0,.5);
+}
+.btn-primary{
+	background-color: #013a63;
+	border-color:#013a63;
+}
+
+.btn-primary:hover{
+	background-color: #2a6f97;
+	border-color:#2a6f97;
+}
+.icon{
+	background-size: contain;
+	height: 120px;
+	width: 120px;
+	display: block;
+	margin: 0 auto;
+}
+.card{
+	border: 1px solid;
+	/*background-color: rgb(255,255,255, .3);*/
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: 600;
+	border-radius: 15px;
+	margin: 5px;
+	padding: 20px;
+    line-height: 20px;
+    width: 32% !important;
+    flex-basis: 32%;
+    color: #fff;
+	background: rgba( 238, 239, 241, 0.15 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 15.0px );
+	-webkit-backdrop-filter: blur( 15.0px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+}	
+.datos{
+	display: none;
+	position: relative;
+	/*top:50%;
+	left: 50%;
+	/*transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);*/
+}
+footer {
+    padding: 20px 0;
+	text-align:center;
+	background-color: #014f86;
+	color:#fff;
+	font-weight: 600;
+}
+
+@media (max-width: 1000px){
+.card{
+	width: 100% !important;
+	flex-basis: 100% !important;
+
+}
+
+}
